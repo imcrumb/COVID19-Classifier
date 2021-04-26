@@ -1,0 +1,8 @@
+#IDE
+.vscode
+
+#DATA
+COVID-19_Radiography_Dataset/
+
+#OS
+.DS_Store
