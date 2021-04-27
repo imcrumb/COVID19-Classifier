@@ -76,14 +76,14 @@ print(test_df.tail()) """
 
 #data augmentation
 train_dgen = tf.keras.preprocessing.image.ImageDataGenerator(
-    rescale=1./255,
+    rescale=1.0/255,
     shear_range=0.3,
     horizontal_flip = True,
     zoom_range=0.3
 )
 
 test_dgen = tf.keras.preprocessing.image.ImageDataGenerator(
-    rescale=1./255
+    rescale=1.0/255
 )
 
 train_generator = train_dgen.flow_from_dataframe(
